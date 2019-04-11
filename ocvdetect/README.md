@@ -6,7 +6,7 @@ It uses the Raspberry Pi Camera Module (make sure to enable the camera via `rasp
 
 The first time download config and model: "MobileNet-SSD v2"  Version "2018_03_29"
 from https://github.com/opencv/opencv/wiki/TensorFlow-Object-Detection-API
-and copy to this `models` directory. Then untar/unpack the model file so you end up with the
+and copy to the `models` sub directory. Then untar/unpack the model file so you end up with the
 files like this:
 
 `models/ssd_mobilenet_v2_coco_2018_03_29/frozen_inference_graph.pb`
