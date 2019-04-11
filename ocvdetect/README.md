@@ -1,5 +1,8 @@
 ### Object detection for the RaspberryPi with OpenCV
 
+
+![Screenshot of object detection window](screenshot-object-detection.png)
+
 This code is based on the code from: https://github.com/opencv/opencv/wiki/TensorFlow-Object-Detection-API.
 
 It uses the Raspberry Pi Camera Module (make sure to enable the camera via `raspi-config` - if you have not already done so)
@@ -14,12 +17,6 @@ files like this:
 and
 
 `models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt`
-
-
-
-![Screenshot of object detection window](screenshot-object-detection.png)
-
-*Screenshot of object detection window*
 
 
 ### Required modules and raspbian packages 
