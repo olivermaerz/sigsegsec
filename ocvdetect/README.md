@@ -7,7 +7,7 @@ This code is based on the code from: https://github.com/opencv/opencv/wiki/Tenso
 
 It uses the Raspberry Pi Camera Module (make sure to enable the camera via `raspi-config` - if you have not already done so)
 
-The first time download config and model: "MobileNet-SSD v2"  Version "2018_03_29"
+The first time download both 'config' and 'model': "MobileNet-SSD v2"  Version "2018_03_29"
 from https://github.com/opencv/opencv/wiki/TensorFlow-Object-Detection-API
 and copy to the `models` sub directory. Then untar/unpack the model file so you end up with the
 files like this:
