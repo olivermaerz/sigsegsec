@@ -15,7 +15,10 @@ and
 
 `models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt`
 
+
+
 ![Screenshot of object detection window](screenshot-object-detection.png)
+
 *Screenshot of object detection window*
 
 
