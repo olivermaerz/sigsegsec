@@ -23,7 +23,8 @@ To install OpenCV on the Raspberry Pi install:
 
 Install virtual environment and setup an environment for our application 
 ```bash 
-sudo apt update sudo apt install python3-venv 
+sudo apt update 
+sudo apt install python3-venv 
 python3.5 -m venv py35opencv
 ```
 
