@@ -11,7 +11,8 @@ camera.resolution = (1280, 720)
 camera.framerate = 60
 rawCapture = PiRGBArray(camera, size=(1280, 720))
 
-# Labels from the model
+# 90 labels for the mobilenet v2
+# (from https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_label_map.pbtxt)
 labels = {1: 'person', 2: 'bicycle', 3: 'car', 4: 'motorcycle', 5: 'airplane', 6: 'bus',
           7: 'train', 8: 'truck', 9: 'boat', 10: 'traffic light', 11: 'fire hydrant', 13: 'stop sign',
           14: 'parking meter', 15: 'bench', 16: 'bird', 17: 'cat', 18: 'dog', 19: 'horse', 20: 'sheep',
@@ -48,7 +49,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
             top = detection[4] * rows
             right = detection[5] * cols
             bottom = detection[6] * rows
-            cv.rectangle(image, (int(left), int(top)), (int(right), int(bottom)), (23, 230, 210), thickness=1)
+            cv.rectangle(image, (int(left), int(top)), (int(right), int(bottom)), (100, 100, 210), thickness=1)
             label = labels[detection[1]]
             cv.putText(image, label, (int(left), abs(int(top)-5)), cv.FONT_HERSHEY_PLAIN, 1, (10, 10, 255))
 
